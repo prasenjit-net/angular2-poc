@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-md-3">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Name</label>
+        <input class="form-control" id="exampleInputEmail1" [(ngModel)]="name" #ctrl="ngModel" required name="name">
+      </div>
+    </form>
+  </div>
+  <div class="col-md-3">
+    <p>Value: {{ name }}</p>
+    <div [hidden]="ctrl.valid || ctrl.pristine" class="alert alert-danger">
+      Name is required
+    </div>
+    <p>Valid: {{ ctrl.valid }}</p>
+    <p>Class: {{ ctrl }}</p>
+    <button (click)="setValue()">Set value</button>
+  </div>
+</div>

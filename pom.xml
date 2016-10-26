@@ -1,0 +1,14 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>net.prasenjit.poc</groupId>
+  <artifactId>node-maven</artifactId>
+  <version>1.0</version>
+  <build>
+    <resources>
+      <resource>
+        <directory>dist</directory>
+        <targetPath>META-INF/resources</targetPath>
+      </resource>
+    </resources>
+  </build>
+</project>
