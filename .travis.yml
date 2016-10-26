@@ -3,4 +3,4 @@ before_script:
   - chmod +x mvnw
 script:
   - npm run build
-  - ./mvnw clean package
+  - ./mvnw --settings settings.xml clean package deploy

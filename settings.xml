@@ -3,7 +3,7 @@
     <server>
       <id>bintray-prasenjit-net-maven</id>
       <username>prasenjit-net</username>
-      <password>9d4696bbc6b659e885622418b35bc9d3951c878b</password>
+      <password>${API_KEY}</password>
     </server>
   </servers>
 </settings>
