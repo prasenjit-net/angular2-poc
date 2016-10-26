@@ -3,6 +3,7 @@
   <groupId>net.prasenjit.poc</groupId>
   <artifactId>node-maven</artifactId>
   <version>1.0</version>
+
   <build>
     <resources>
       <resource>
@@ -11,4 +12,12 @@
       </resource>
     </resources>
   </build>
+
+  <distributionManagement>
+    <repository>
+      <id>bintray-prasenjit-net-maven</id>
+      <name>prasenjit-net-maven</name>
+      <url>https://api.bintray.com/maven/prasenjit-net/maven/angular2-poc/;publish=1</url>
+    </repository>
+  </distributionManagement>
 </project>
